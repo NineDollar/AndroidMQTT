@@ -1,7 +1,5 @@
 package org.eclipse.paho.android.androidmqtt
 
-import android.app.ActivityManager
-import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
