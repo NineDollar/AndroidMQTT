@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qos:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_qos"
+        app:layout_constraintRight_toLeftOf="@+id/edit_qos"
+        app:layout_constraintTop_toTopOf="@+id/edit_qos" />
+
+    <EditText
+        android:id="@+id/edit_qos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/guideline1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Broker:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_broker"
+        app:layout_constraintRight_toLeftOf="@+id/edit_broker"
+        app:layout_constraintTop_toTopOf="@+id/edit_broker" />
+
+    <EditText
+        android:id="@+id/edit_broker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/edit_qos" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Port:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_port"
+        app:layout_constraintRight_toLeftOf="@+id/edit_port"
+        app:layout_constraintTop_toTopOf="@+id/edit_port" />
+
+    <EditText
+        android:id="@+id/edit_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/edit_broker" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ClientId:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_clientId"
+        app:layout_constraintRight_toLeftOf="@+id/edit_clientId"
+        app:layout_constraintTop_toTopOf="@+id/edit_clientId" />
+
+    <EditText
+        android:id="@+id/edit_clientId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/edit_port" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SubTopic:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_subTopic"
+        app:layout_constraintRight_toLeftOf="@+id/edit_subTopic"
+        app:layout_constraintTop_toTopOf="@+id/edit_subTopic" />
+
+    <EditText
+        android:id="@+id/edit_subTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/edit_clientId" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PubTopic:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_pubTopic"
+        app:layout_constraintRight_toLeftOf="@+id/edit_pubTopic"
+        app:layout_constraintTop_toTopOf="@+id/edit_pubTopic" />
+
+    <EditText
+        android:id="@+id/edit_pubTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/edit_subTopic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_password"
+        app:layout_constraintRight_toLeftOf="@+id/edit_password"
+        app:layout_constraintTop_toTopOf="@+id/edit_password" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/edit_pubTopic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_userName"
+        app:layout_constraintRight_toLeftOf="@+id/edit_userName"
+        app:layout_constraintTop_toTopOf="@+id/edit_userName" />
+
+    <EditText
+        android:id="@+id/edit_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/edit_password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_message"
+        app:layout_constraintRight_toLeftOf="@+id/edit_message"
+        app:layout_constraintTop_toTopOf="@+id/edit_message" />
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:maxWidth="200dp"
+        android:singleLine="false"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/edit_userName" />
+
+
+    <Switch
+        android:id="@+id/swith_cleanSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CleanSession"
+        app:layout_constraintTop_toBottomOf="@+id/edit_message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <ImageView
+        android:id="@+id/imageView_connect"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/connect"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swith_cleanSession"/>
+
+    <ImageView
+        android:id="@+id/image_submit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/submit"
+        app:layout_constraintRight_toLeftOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@id/swith_cleanSession" />
+
+    <ImageView
+        android:id="@+id/image_run"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/run"
+        app:layout_constraintLeft_toRightOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/image_submit"/>
+
+
+    <ImageView
+        android:id="@+id/image_stop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:background="@drawable/stop"
+        app:layout_constraintLeft_toRightOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/image_submit"/>
+
+    <ImageView
+        android:id="@+id/imageView_disconnect"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/disconnect"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_connect"
+        app:layout_constraintRight_toRightOf="@+id/textView_show"
+        app:layout_constraintTop_toTopOf="@+id/imageView_connect"/>
+
+    <TextView
+        android:id="@+id/textView_show"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:textSize="15sp"
+        android:background="#F5F5F5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/swith_cleanSession" />
+
+    <TextView
+        android:id="@+id/textView_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/delete"
+        app:layout_constraintRight_toRightOf="@id/textView_show"
+        app:layout_constraintBottom_toBottomOf="@id/textView_show"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
